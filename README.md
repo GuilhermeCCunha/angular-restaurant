@@ -4,7 +4,7 @@
 
  <img src="src/assets/home-page.png"/>
 
-This website is a Single-page application and was created using the Angular framework. in addition to the CRUD feature, this website also has the feature to choose between light or dark theme.
+This website is a Single-page application and was created using the Angular framework. in addition to the CRUD feature, this website also has the feature to choose between light or dark theme. The theme is stored in localStorage.
 
 ### Menu Page
 
@@ -35,6 +35,8 @@ https://github.com/GuilhermeCCunha/restaurant-menu
 
 4. To start the application, run `npm start` on your terminal. Or run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-### URL
+### Website
+
+https://angular-restaurant-iota.vercel.app
 
 
