@@ -1,0 +1,13 @@
+<app-loading></app-loading>
+<div class="grid">
+  <li *ngFor="let item of foodList">
+    <a [routerLink]="['details', item._id]" matTooltip="Click on the card to see details." [matTooltipShowDelay]="1000"
+      [matTooltipHideDelay]="2000">
+      <div class="card">
+        <h2>{{ item.name }}</h2>
+        <p>{{ item.category }}</p>
+        <img [src]="item.image_url" width="128" height="128" alt="item picture">
+      </div>
+    </a>
+  </li>
+</div>

@@ -1,0 +1,28 @@
+button {
+  margin: 1rem;
+  border: 2px solid var(--text-body);
+  background-color: #CA0B00 ;
+  color: var(--text-menu);
+  padding: 4px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover, button:active {
+  opacity: 0.7;
+}
+
+input[type=text] {
+  background-color: var(--body);
+  color: var(--text-body);
+  border: 1px dotted var(--text-body);
+}
+
+input[type=text]:focus {
+  border: 2px solid var(--text-body);
+}
+
+li{
+  margin-top: 0.5rem;
+}

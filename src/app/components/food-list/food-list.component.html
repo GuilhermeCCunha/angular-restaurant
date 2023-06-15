@@ -1,0 +1,23 @@
+<app-loading></app-loading>
+<li *ngFor="let item of foodList">
+  <img [src]="item.image_url" matTooltip="item id: {{item._id}}" [matTooltipShowDelay]="200"
+    [matTooltipHideDelay]="2500" matTooltipPosition="after" width="128" height="128" alt="item picture">
+  <br>
+  <input type="text" placeholder="name" [(ngModel)]="item.name"
+    matTooltip="Click on the input field to start editing and press enter to save." [matTooltipShowDelay]="200"
+    [matTooltipHideDelay]="2000" matTooltipPosition="after"
+    (keyup.enter)="foodListEdit(item.name, item.category, item.image_url, item._id)">
+  <br><br>
+  <input type="text" placeholder="category" [(ngModel)]="item.category"
+    matTooltip="Click on the input field to start editing and press enter to save." [matTooltipShowDelay]="200"
+    [matTooltipHideDelay]="2000" matTooltipPosition="after"
+    (keyup.enter)="foodListEdit(item.name, item.category, item.image_url, item._id)">
+  <br>
+  <input type="text" placeholder="image_url" [(ngModel)]="item.image_url"
+    matTooltip="Click on the input field to start editing and press enter to save." [matTooltipShowDelay]="200"
+    [matTooltipHideDelay]="2000" matTooltipPosition="below"
+    (keyup.enter)="foodListEdit(item.name, item.category, item.image_url, item._id)">
+  <button (click)="foodListDelete(item._id)">
+    Delete
+  </button>
+</li>

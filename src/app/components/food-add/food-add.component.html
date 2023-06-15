@@ -1,0 +1,28 @@
+<form [formGroup]="foodForm" ngNativeValidate
+  (ngSubmit)="listAddItem(foodForm.value.name ,foodForm.value.category ,foodForm.value.image_url); reloadCurrentPage()">
+  <mat-form-field>
+    <input matInput placeholder="name" type="text" formControlName="name" required>
+    <mat-error *ngIf="FoodName.errors?.['required']">
+      This field is required.
+    </mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput placeholder="category" type="text" formControlName="category" required>
+    <mat-error *ngIf="FoodCategory.errors?.['required']">
+      This field is required.
+    </mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput placeholder="image_url" type="text" formControlName="image_url" required minlength="5">
+    <mat-error *ngIf="FoodImageUrl.errors?.['minlength']">
+      A minimum length of 5 characters is required.
+    </mat-error>
+    <mat-error *ngIf="FoodImageUrl.errors?.['required']">
+      This field is required.
+    </mat-error>
+  </mat-form-field>
+  <button [disabled]="foodForm.invalid" type="submit">Add Item</button>
+</form>
+<br>

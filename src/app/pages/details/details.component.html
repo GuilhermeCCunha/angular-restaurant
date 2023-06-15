@@ -1,0 +1,12 @@
+<app-loading></app-loading>
+<div class="container">
+  <li *ngFor="let item of foodList">
+    <div class="card">
+      <h2>{{ item.name }}</h2>
+      <p>category: <strong>{{ item.category }}</strong></p>
+      <img [src]="item.image_url" alt="item picture">
+      <p>item id: <small>{{ item._id }}</small></p>
+    </div>
+  </li>
+  <a [routerLink]="['../../']">Menu</a>
+</div>

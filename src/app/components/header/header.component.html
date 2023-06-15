@@ -1,0 +1,24 @@
+<header>
+  <img src="./assets/angular.svg" alt="Angular Logo" />
+
+  <ul>
+    <li>
+      <a [routerLink]="['']">Home</a>
+    </li>
+    <li>
+      <a [routerLink]="['menu']">Menu</a>
+    </li>
+    <li>
+      <a [routerLink]="['contact']">Contact</a>
+    </li>
+    <li>
+      <a [routerLink]="['about']">About</a>
+    </li>
+    <li>
+      <button type="button" matTooltip="Click here and change the website theme to {{ textTheme }}"
+        [matTooltipShowDelay]="1000" [matTooltipHideDelay]="2000" (click)="toggle()">
+        <img src="./assets/{{ icon }}.svg" alt="Click here and change the website theme to {{ textTheme }}" />
+      </button>
+    </li>
+  </ul>
+</header>
