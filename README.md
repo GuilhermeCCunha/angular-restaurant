@@ -5,6 +5,8 @@
  <img src="src/assets/home-page.png"/>
 
 This website is a Single-page application and was created using the Angular framework. in addition to the CRUD feature, this website also has the feature to choose between light or dark theme. The theme is stored in localStorage.
+ - <sup><sub> Custom themes synchronization between tabs/windows using RxJS. </sub></sup>
+
 
 ### Menu Page
 
